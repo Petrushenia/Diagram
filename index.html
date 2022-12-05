@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style/fonts/arial/stylesheet.css">
+  <link rel="stylesheet" href="./assets/style/fonts/gotham/stylesheet.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+
+  <div class="wrappe-chart wrapper-chart-js">
+    <div class="indicators-wrapper">
+      <div class="indicators">
+        <div class="indicators-title">
+          72<span class="remains">
+            <div class="indicators-title-percent">%</div>
+            <div class="indicators-titl-eremeins-number">.7</div>
+          </span>
+        </div>
+        <div class="indicators-text">
+          <h2 class="indicatots-text-title">Лояльность</h2> 
+          <p class="indicators-level-text">
+            <span class="indictors-level-text-color indictors-level-text-color-js">
+              ниже среднего
+            </span>
+            <br>
+            <span class="indictors-level-text-difference">
+              по отрасли: FMCG
+              <br>
+              значений слева от медианы
+              <br>
+              <span class="difference-indicators">52.0% - 83.1%</span>
+            </span>
+          </p>
+          <div class="up-down-indicators">
+            <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.50001 0.75L18.1603 10.5H0.839752L9.50001 0.75Z" fill="#70A84B"/>
+            </svg>
+            <span class="curren-indicators">3.1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="canvas">
+      <img src="./assets/svg/loyalty.svg" alt="flag" class="flag-icon">
+      <svg class="chart" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+        <circle class="unit" cx="50%" cy="50%" r="16" fill="transparent"/>
+        <circle class="unit unit-yellow yellow-js" cx="50%" cy="50%" r="16" fill="transparent"/>
+        <circle class="unit unit-green green-js" cx="50%" cy="50%" r="16" fill="transparent"/> 
+      </svg>
+    </div>
+
+    <div class="statistics-join-line-wrapper">
+      <div class="statistics-join-line-rect"></div>
+      <div class="statistics-join-line-cross"></div>
+    </div>
+    
+    <div class="statistics-wprapper">
+      <div class="statistics-cards">
+
+        <div class="statistics-card">
+          <div class="customers">Промоутеры</div>
+          <div class="statistics-data">
+            <div class="">
+              <div class="statistics-data-percent">32.0%</div>
+              <div class="statistics-people">
+              <span class="statistics-people-count">81</span>
+              <img class="human-icon" src="./assets/svg/human_full.svg" alt="human">
+            </div>
+            </div>
+            <div class="statistics-percent-count">
+              <div class="statistics-percent-count-color-wrapper">
+                <div class="statistics-percent-count-color-child current-promoter-count"></div>
+                <div class="statistics-percent-count-color promoter"></div>
+              </div>     
+              <span class="statistics-percent-count-current-percent">+1.2%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="statistics-card">
+          <div class="customers">Скептики</div>
+          <div class="statistics-data">
+            <div class="">
+              <div class="statistics-data-percent">39.1%</div>
+              <div class="statistics-people">
+              <span class="statistics-people-count">8</span>
+              <img class="human-icon" src="./assets/svg/human_full.svg" alt="human">
+            </div>
+            </div>
+            <div class="statistics-percent-count">
+              <div class="statistics-percent-count-color-wrapper">
+                <div class="statistics-percent-count-color-child current-skeptics-count"></div>
+                <div class="statistics-percent-count-color skeptics"></div>
+              </div>
+              <span class="statistics-percent-count-current-percent">+4.8%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="statistics-card">
+          <div class="customers">Критики</div>
+          <div class="statistics-data">
+            <div class="">
+              <div class="statistics-data-percent">79.8%</div>
+              <div class="statistics-people">
+                <span class="statistics-people-count">7</span>
+                <img class="human-icon" src="./assets/svg/human_full.svg" alt="human">
+              </div>
+            </div>
+            <div class="statistics-percent-count">
+              <div class="statistics-percent-count-color-wrapper">
+                <div class="statistics-percent-count-color-child current-critics-count"></div>
+                <div class="statistics-percent-count-color critics"></div>
+              </div>  
+              <span class="statistics-percent-count-current-percent">-9.7%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="example-block">
+      <p>Данный блок я представил ввиде примера, для того, что бы оценивающие могли видеть, анимацию диаграммы врамках дополнительного задания 2, так и для оценки моих знаний в js.</p>
+      <label for="promoters">Ведите значиение для Промоутеры</label>
+      <input id="promoters" type="number" class="promoters" placeholder="promoter" max="100" min="0" value="0">
+      <label for="skeptic"> Ведите значение для Скептики</label>
+      <input id="skeptic" type="number"  class="skeptic" placeholder="skeptics" max="100" min="0" value="0">
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
